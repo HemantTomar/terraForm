@@ -1,8 +1,9 @@
 
 
 data "aws_availability_zones" "available" {}
+#commenting below beacause it will ask for subscription for market place ,so i will use ami as hardcoded
 
-data "aws_ami" "centos" {
+/* data "aws_ami" "centos" {
   owners      = ["679593333241"]
   most_recent = true
 
@@ -22,14 +23,17 @@ data "aws_ami" "centos" {
   }
 }
 
-
+*/
 data "template_file" "init" {
   template = file("${path.module}/userdata.tpl")
 }
 
 resource "aws_instance" "my-test-instance" {
   count                  = 2
-  ami                    = data.aws_ami.centos.id
+  #using hardcoded ami 
+  ami                   = "ami-0c94855ba95c71c99"
+  #commented ami from data source
+ # ami                    = data.aws_ami.centos.id
   instance_type          = var.instance_type
   key_name               = aws_key_pair.mytest-key.id
   vpc_security_group_ids = [var.security_group]
