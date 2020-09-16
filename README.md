@@ -1,6 +1,6 @@
 # terra_a
 # Directory Structure 
-   .
+.
 ├── modules
 │   ├── ec2
 │   │   ├── main.tf
