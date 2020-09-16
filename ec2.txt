@@ -1,0 +1,20 @@
+AMI --hardcoding ---data source 
+Availability zone --data source
+Instance type ---t2.micro
+count -----------2
+custom VPC
+
+user_data
+   #!/bin/bash
+   yum -y install httpd
+   echo "This is comming from terraform 
+   service httpd start
+   chkconfig httpd on
+
+Default volume 
+
+Tags
+
+Security Group (module VPC)
+
+Key

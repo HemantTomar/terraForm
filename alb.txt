@@ -1,0 +1,27 @@
+TARGET GROUP
+ Name
+ Target Type --- Instance
+                 IP
+                 Lambda
+ Protocol -------HTTP
+ Port 80
+ VPC (custom)
+ Health check --- apache ---/var/www/html/test.html
+
+ curl http://<instance>:80
+ Advance Health check option
+
+ Healthy 5
+ Unhealthy 2
+
+Appliation Load Balancer 
+ Name 
+ Scheme --Internet facing 
+          Internal 
+IP Address Type ---ipv4
+                   dual stack 
+Listner ----Load Balancer Protocol /Port 80
+Availibility Zone --- 2
+Security Group
+Routing 
+Regiser Targets 
