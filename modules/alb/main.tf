@@ -6,12 +6,12 @@ resource "aws_lb" "my-aws-alb" {
   internal = false
 
   security_groups = [
-    "${aws_security_group.my-alb-sg.id}",
+    aws_security_group.my-alb-sg.id,
   ]
 
   subnets = [
-    "${var.subnet1}",
-    "${var.subnet2}",
+    var.subnet1,
+    var.subnet2,
   ]
 
   tags = {
