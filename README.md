@@ -1,5 +1,5 @@
 # terra_a
-#Directory Structure 
+# Directory Structure 
    .
 ├── modules
 │   ├── ec2
