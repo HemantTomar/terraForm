@@ -1,4 +1,4 @@
-#Simple HTTP application Infra Using Terraform 
+# Simple HTTP application Infra Using Terraform 
 ## Directory Structure 
 .
 ├── modules
