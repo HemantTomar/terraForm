@@ -1,6 +1,6 @@
 # Simple HTTP application Infra Using Terraform 
 ## Directory Structure 
-.
+```.
 ├── modules
 │   ├── ec2
 │   │   ├── main.tf
@@ -39,7 +39,8 @@
 │       ├── versions.tf
 │       └── terraform.tfvars
 ├── LICENSE
-└── README.md
+└── README.md 
+```
 
 
 
