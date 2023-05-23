@@ -1,5 +1,5 @@
-# terra_a
-# Directory Structure 
+#Simple HTTP application Infra Using Terraform 
+## Directory Structure 
 .
 ├── modules
 │   ├── ec2
